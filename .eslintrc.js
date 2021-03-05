@@ -37,7 +37,13 @@ module.exports = {
   overrides: [
     // node files
     {
-      files: ['.eslintrc.js', '.prettierrc.js'],
+      files: [
+        '.eslintrc.js',
+        '.prettierrc.js',
+        'gatsby-config.js',
+        'postcss.config.js',
+        'tailwind.config.js',
+      ],
       parserOptions: {
         sourceType: 'script',
       },
@@ -47,7 +53,11 @@ module.exports = {
       },
       plugins: ['node'],
       extends: ['plugin:node/recommended'],
-      rules: {},
+      rules: {
+        // this can be removed once the following is fixed
+        // https://github.com/mysticatea/eslint-plugin-node/issues/77
+        'node/no-unpublished-require': 'off',
+      },
     },
   ],
 }
