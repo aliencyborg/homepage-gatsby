@@ -2,9 +2,10 @@ const path = require('path')
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `AlienCyborg`,
+    description: `AlienCyborg is a scrappy team of website builders with a futuristic vision of
+      amazing online experiences. Need a website built or repaired? Say hello@aliencyb.org.`,
+    author: `admin@aliencyb.org`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,13 +22,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `AlienCyborg`,
+        short_name: `AlienCyborg`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#000000`,
+        theme_color: `#6D28D9`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo-v2.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,

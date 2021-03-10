@@ -1,29 +1,47 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={['AUTO', 'WEBP', 'AVIF']}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to &quot;Using TypeScript&quot;</Link>
-    </p>
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <div className="index">
+        <div>
+          <h1>AlienCyborg</h1>
+          <h2>It&apos;s Probably Fine.</h2>
+        </div>
+        <div>
+          <div>
+            <StaticImage
+              src="../images/logo-v1.png"
+              width={300}
+              quality={95}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              alt="AlienCyborg Logo black & white"
+            />
+          </div>
+          <div>
+            <StaticImage
+              src="../images/logo-v2.png"
+              width={300}
+              quality={95}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              alt="AlienCyborg Logo color"
+            />
+          </div>
+        </div>
+        <div>
+          <div>
+            We build websites for entrepreneurs by sheer grit and creativity,
+            because a great website is a force multiplier.
+          </div>
+        </div>
+      </div>
+    </Layout>
+  )
+}
 
 export default IndexPage

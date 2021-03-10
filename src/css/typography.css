@@ -1,0 +1,8 @@
+/* Get my Typekit Fonts */
+@import url("https://use.typekit.net/tar5rbi.css");
+
+/* Add a local font */
+@font-face {
+  font-family: "Bayshore";
+  src: url("../fonts/Bayshore.otf");
+}
