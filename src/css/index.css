@@ -89,7 +89,7 @@
 }
 
 .NavBar > div:nth-child(4) > div {
-  @apply opacity-90 lg:opacity-100 lg:border-none lg:pb-0 lg:flex lg:flex-grow lg:justify-around absolute w-full pb-4 bg-indigo-300 border-b-4;
+  @apply opacity-90 lg:opacity-100 lg:border-none lg:pb-0 lg:flex lg:flex-grow lg:justify-around absolute w-full pb-4 border-b-4;
 }
 
 .NavBar > div:nth-child(4) > div:not(.expanded) {
